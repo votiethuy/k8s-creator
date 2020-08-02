@@ -83,6 +83,19 @@ kops validate cluster simple.k8s.local
 kubectl get nodes --show-labels
 ```
 
+- Ssh to master node
+
+```
+ssh admin@<master-ip>
+```
+
+- Deploy a pod to test
+
+```
+kubectl run pod1 --image=nginx
+kubectl expose pods pod1 --port=80 --type=LoadBalancer
+```
+
 ## Deleting the cluster
 
 ```

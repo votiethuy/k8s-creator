@@ -96,6 +96,32 @@ kubectl run pod1 --image=nginx
 kubectl expose pods pod1 --port=80 --type=LoadBalancer
 ```
 
+## Change the instance type in an instance group
+
+- Get list Instance group
+
+```
+kops get instancegroups
+```
+
+- Edit the instance groups
+
+```
+kops edit ig nodes
+```
+
+- Review the changes
+
+```
+kops update cluster simple.k8s.local
+```
+
+- Apply the changes
+
+```
+kops update cluster simple.k8s.local --yes
+```
+
 ## Deleting the cluster
 
 ```

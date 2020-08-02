@@ -83,12 +83,6 @@ kops validate cluster simple.k8s.local
 kubectl get nodes --show-labels
 ```
 
-- SSH to master
-
-```
-ssh -i ~/.ssh/id_rsa admin@api.simple.k8s.local
-```
-
 ## Deleting the cluster
 
 ```

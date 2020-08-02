@@ -122,6 +122,12 @@ kops update cluster simple.k8s.local
 kops update cluster simple.k8s.local --yes
 ```
 
+- Rolling update
+
+```
+kops rolling-update cluster
+```
+
 ## Deleting the cluster
 
 ```
